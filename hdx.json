@@ -1,7 +1,4 @@
 {
-  "configVersion":5,
-   "bites":[
-      {
          "tempShowSaveCancelButtons":false,
          "ingredient":{
             "aggregateColumn":null,
@@ -21,7 +18,7 @@
             "explainedFiltersMap":{
 
             },
-            "title":"Row Count pls work",
+            "title":"Row Count",
             "dataTitle":"#count",
             "unit":"k"
          },
@@ -37,7 +34,5 @@
 
          },
          "displayCategory":"Key Figures",
-         "hashCode":-542997807
+         "hashCode":542997807
       }
-   ]
-}
