@@ -1,8 +1,7 @@
 {
-  "name": "generic",
-  "title": "Generic",
+  "name": "why",
+  "title": "plswork",
   "type": "cookbook",
-  "default": true,
   "columns": [
     "#adm2+name",
     "#affected+infected",
@@ -28,70 +27,6 @@
         "valueColumns": [
           "#affected+infected",
           "#affected+killed"
-        ]
-      }
-    },
-    {
-      "name": "Charts: Distinct count of values in value column by the aggregate column",
-      "description": "",
-      "type": "chart",
-      "ingredients": {
-        "aggregateFunctions": [
-          "distinct-count"
-        ],
-        "aggregateColumns": [
-          "#region"
-        ],
-        "valueColumns": [
-          "#adm2+name"
-        ]
-      }
-    },
-    {
-      "name": "Charts: Sum items for a tag grouped by administrative units",
-      "description": "",
-      "type": "timeseries",
-      "ingredients": {
-        "aggregateFunctions": [
-          "sum",
-          "count"
-        ],
-        "aggregateColumns": [
-          "#date",
-          "#region"
-        ],
-        "valueColumns": [
-          "#affected+infected",
-          "#affected+killed"
-        ]
-      }
-    },
-    {
-      "name": "Key Figures: Sum/count items for a value column",
-      "description": "",
-      "type": "key figure",
-      "ingredients": {
-        "aggregateFunctions": [
-          "sum",
-          "count"
-        ],
-        "valueColumns": [
-          "#affected+infected",
-          "#affected+killed"
-        ]
-      }
-    },
-    {
-      "name": "Key Figures: Distinct count of values in value column",
-      "description": "",
-      "type": "key figure",
-      "ingredients": {
-        "aggregateFunctions": [
-          "distinct-count"
-        ],
-        "valueColumns": [
-          "#region",
-          "#adm2+name"
         ]
       }
     }
