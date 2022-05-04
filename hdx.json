@@ -1,4 +1,8 @@
 {
+  "configVersion":5,
+  "bites":
+  [
+    {
       "tempShowSaveCancelButtons":false,
       "ingredient":
     {
@@ -34,7 +38,7 @@
           }
         },
         "pieChart":false,
-        "title":"Sum of deaths by loc by date",
+        "title":"MEMAAAA",
         "dataTitle":"deaths",
       },
       "uiProperties":
@@ -56,3 +60,4 @@
       "displayCategory":"Timeseries",
       "hashCode":756132721
     }
+  ]}
