@@ -16,7 +16,7 @@
     {
 
     },
-      "description":"memamema"
+      "description":""
     },
       "type":"timeseries",
       "errorMsg":null,
@@ -29,8 +29,7 @@
             "filterWith":
             [
               {
-                "#affected+killed":"is not empty"
-              }
+                "#affected+killed":"is not empty",}
             ],
             "filterWithout":
             [
@@ -39,8 +38,8 @@
           }
         },
         "pieChart":false,
-        "title":"dunno",
-        "dataTitle":"deaths"
+        "title":"Sum of deaths by loc by date",
+        "dataTitle":"deaths",
       },
       "uiProperties":
       {
@@ -54,13 +53,11 @@
         "dateFormat":"%d %b %Y",
         "internalColorPattern":
         ["#1ebfb3","#0077ce","#f2645a","#9C27B0"]
-      },
-      "dataProperties":
+      },"dataProperties":
     {
 
     },
       "displayCategory":"Timeseries",
       "hashCode":756132721
     }
-  ]
-}
+  ]}
