@@ -1,63 +1,43 @@
 {
   "configVersion":5,
-  "bites":
-  [
-    {
-      "tempShowSaveCancelButtons":false,
-      "ingredient":
-    {
-      "aggregateColumn":"#adm2+name",
-      "valueColumn":"#affected+killed",
-      "aggregateFunction":"sum",
-      "dateColumn":"#date",
-      "comparisonValueColumn":null,
-      "comparisonOperator":null,
-      "filters":
-    {
-
-    },
-      "description":""
-    },
-      "type":"timeseries",
-      "errorMsg":null,
-      "computedProperties":
+   "bites":[
       {
-        "explainedFiltersMap":
-        {
-          "remove empty valued rows":
-          {
-            "filterWith":
-            [
-              {
-                "#affected+killed":"is not empty",}
-            ],
-            "filterWithout":
-            [
+         "tempShowSaveCancelButtons":false,
+         "ingredient":{
+            "aggregateColumn":null,
+            "valueColumn":"#count",
+            "aggregateFunction":"count",
+            "dateColumn":null,
+            "comparisonValueColumn":null,
+            "comparisonOperator":null,
+            "filters":{
 
+            },
+            "description":""
+         },
+         "type":"key figure",
+         "errorMsg":null,
+         "computedProperties":{
+            "explainedFiltersMap":{
+
+            },
+            "title":"Row Count pls work",
+            "dataTitle":"#count",
+            "unit":"k"
+         },
+         "uiProperties":{
+            "internalColorPattern":[
+               "#1ebfb3",
+               "#0077ce",
+               "#f2645a",
+               "#9C27B0"
             ]
-          }
-        },
-        "pieChart":false,
-        "title":"MEMAAAA",
-        "dataTitle":"deaths",
-      },
-      "uiProperties":
-      {
-        "swapAxis":true,
-        "showGrid":false,
-        "color":"#0077ce",
-        "sortingByValue1":"DESC",
-        "sortingByCategory1":null,
-        "showPoints":false,
-        "showAllDates":false,
-        "dateFormat":"%d %b %Y",
-        "internalColorPattern":
-        ["#1ebfb3","#0077ce","#f2645a","#9C27B0"]
-      },"dataProperties":
-    {
+         },
+         "dataProperties":{
 
-    },
-      "displayCategory":"Timeseries",
-      "hashCode":756132721
-    }
-  ]}
+         },
+         "displayCategory":"Key Figures",
+         "hashCode":-542997807
+      }
+   ]
+}
