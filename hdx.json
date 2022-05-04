@@ -1,8 +1,4 @@
 {
-  "configVersion":5,
-  "bites":
-  [
-    {
       "tempShowSaveCancelButtons":false,
       "ingredient":
     {
@@ -60,4 +56,3 @@
       "displayCategory":"Timeseries",
       "hashCode":756132721
     }
-  ]}
