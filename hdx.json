@@ -1,34 +1,66 @@
 {
-  "name": "why",
-  "title": "plswork",
-  "type": "cookbook",
-  "columns": [
-    "#adm2+name",
-    "#affected+infected",
-    "#affected+killed",
-    "#date",
-    "#region",
-    "#year"
-  ],
-  "recipes": [
+  "configVersion":5,
+  "bites":
+  [
     {
-      "name": "Charts for year 2017",
-      "description": "Mema try",
-      "type": "chart",
-      "ingredients": {
-        "aggregateFunctions": [
-          "sum",
-          "count"
-        ],
-        "aggregateColumns": [
-          "#region",
-          "#adm2+name"
-        ],
-        "valueColumns": [
-          "#affected+infected",
-          "#affected+killed"
-        ]
-      }
+      "tempShowSaveCancelButtons":false,
+      "ingredient":
+    {
+      "aggregateColumn":"#adm2+name",
+      "valueColumn":"#affected+killed",
+      "aggregateFunction":"sum",
+      "dateColumn":"#date",
+      "comparisonValueColumn":null,
+      "comparisonOperator":null,
+      "filters":
+    {
+
+    },
+      "description":"memamema"
+    },
+      "type":"timeseries",
+      "errorMsg":null,
+      "computedProperties":
+      {
+        "explainedFiltersMap":
+        {
+          "remove empty valued rows":
+          {
+            "filterWith":
+            [
+              {
+                "#affected+killed":"is not empty"
+              }
+            ],
+            "filterWithout":
+            [
+
+            ]
+          }
+        },
+        "pieChart":false,
+        "title":"dunno",
+        "dataTitle":"deaths"
+      },
+      "uiProperties":
+      {
+        "swapAxis":true,
+        "showGrid":false,
+        "color":"#0077ce",
+        "sortingByValue1":"DESC",
+        "sortingByCategory1":null,
+        "showPoints":false,
+        "showAllDates":false,
+        "dateFormat":"%d %b %Y",
+        "internalColorPattern":
+        ["#1ebfb3","#0077ce","#f2645a","#9C27B0"]
+      },
+      "dataProperties":
+    {
+
+    },
+      "displayCategory":"Timeseries",
+      "hashCode":756132721
     }
   ]
 }
