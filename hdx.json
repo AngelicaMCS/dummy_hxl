@@ -1,28 +1,48 @@
 {
+  "configVersion":5,
+   "bites":[
+      {
          "tempShowSaveCancelButtons":false,
          "ingredient":{
-            "aggregateColumn":null,
-            "valueColumn":"#count",
-            "aggregateFunction":"count",
-            "dateColumn":null,
+            "aggregateColumn":"#adm2+name",
+            "valueColumn":"#affected+killed",
+            "aggregateFunction":"sum",
+            "dateColumn":"#date",
             "comparisonValueColumn":null,
             "comparisonOperator":null,
             "filters":{
-
+               
             },
             "description":""
          },
-         "type":"key figure",
+         "type":"timeseries",
          "errorMsg":null,
          "computedProperties":{
             "explainedFiltersMap":{
-
+               "remove empty valued rows":{
+                  "filterWith":[
+                     {
+                        "#affected+killed":"is not empty"
+                     }
+                  ],
+                  "filterWithout":[
+                     
+                  ]
+               }
             },
-            "title":"Row Count",
-            "dataTitle":"#count",
-            "unit":"k"
+            "pieChart":false,
+            "title":"Sum of deaths by loc by date",
+            "dataTitle":"deaths"
          },
          "uiProperties":{
+            "swapAxis":true,
+            "showGrid":false,
+            "color":"#0077ce",
+            "sortingByValue1":"DESC",
+            "sortingByCategory1":null,
+            "showPoints":false,
+            "showAllDates":false,
+            "dateFormat":"%d %b %Y",
             "internalColorPattern":[
                "#1ebfb3",
                "#0077ce",
@@ -31,8 +51,10 @@
             ]
          },
          "dataProperties":{
-
+            
          },
-         "displayCategory":"Key Figures",
-         "hashCode":542997807
+         "displayCategory":"Timeseries",
+         "hashCode":756132721
       }
+   ]
+ }
